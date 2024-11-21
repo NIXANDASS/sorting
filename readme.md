@@ -16,23 +16,28 @@ To write a python program for Fibonacci Series and test the test cases using Pyt
 
 ### Program:
 ```
- n=int(input("Enter the number of elements:"))  
-arr=[]  
+n = int(input("Enter the number of elements: "))  
+arr = []  
+
 try:  
-     for i in range(n):  
-        a=float(input("Enter the element:"))  
+    for i in range(n):  
+        a = float(input("Enter the element: "))  
         arr.append(a)  
-        for i in range(n):  
-            for j in range(n):  
-                if(arr[i]<arr[j): 
-                              temp = arr[i] 
-                              arr[i] = arr[j] 
-                              arr[j] = temp 
-    print(“The array after sorting: ”) 
- for i in range(n): 
-     print(arr[i],end=’ ’) 
+    
+    for i in range(n):  
+        for j in range(i + 1, n):  
+            if arr[i] > arr[j]: 
+                temp = arr[i] 
+                arr[i] = arr[j] 
+                arr[j] = temp 
+
+    print("The array after sorting:") 
+    for i in range(n): 
+        print(arr[i], end=' ') 
+
 except ValueError: 
-    print(“Enter a valid number”)
+    print("Enter a valid number")
+
 ```
 ### Output:
 ![Screenshot 2024-11-08 142107](https://github.com/user-attachments/assets/1abbf75c-e29a-4ba9-b272-fa5182146343)
