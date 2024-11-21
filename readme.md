@@ -35,7 +35,7 @@ except ValueError:
     print(“Enter a valid number”)
 ```
 ### Output:
-
+![Screenshot 2024-11-08 142107](https://github.com/user-attachments/assets/1abbf75c-e29a-4ba9-b272-fa5182146343)
 
 ### Result:
 Thus, a program for binary search has been written and test cases have been written and verified successfully.
